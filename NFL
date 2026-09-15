@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summit Consulting Group - NFL Division</title>
+</head>
+<body style="background-color: navy; color: yellow; text-align: center; font-family: Impact, sans-serif; padding-bottom: 60px;">
+
+    <h1>NFL CONSULTATION DIVISION</h1>
+    <h2><i>"Advanced Video Game Playbooks & Instant Replay Guesswork"</i></h2>
+    
+    <hr style="border: 3px dashed lime;">
+
+    <p style="font-family: 'Comic Sans MS'; font-size: 20px; color: cyan;">
+        From backyard touch football to professional franchises, our NFL division 
+        provides absolute zero practical value. We specialize in telling you to 
+        "just run the ball more" while eating snacks.
+    </p>
+
+    <div style="background-color: white; color: black; padding: 20px; margin: 40px auto; width: 60%; border: 5px solid magenta;">
+        <h3>Pro Football Advisory Services</h3>
+        <p>Did your favorite team blow a lead? That'll be $5,000 please.</p>
+        <a href="index.html"><button style="background-color: yellow; font-size: 18px; padding: 10px 20px; font-weight: bold; cursor: pointer;">⬅ Back to Home</button></a>
+    </div>
+
+    <marquee scrollamount="10" style="background-color: red; color: white; font-size: 18px; position: fixed; bottom: 0; left: 0; width: 100%; padding: 8px 0;">
+        THE FORWARD PASS WAS A MISTAKE · DEFENSE WINS CHAMPIONSHIPS UNLESS YOU GIVE UP 50 POINTS · FIRE THE COACH IMMEDIATELY · TRUST THE PROCESS · EXPERT TACKLING ADVISORY · SUNDAY IS FOR THE BOYS · CONSULT THE VIBES ·
+    </marquee>
+
+</body>
+</html>
