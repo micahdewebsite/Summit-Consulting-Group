@@ -1,40 +1,298 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Summit Consulting Group - Elite Sports League Solutions</title>
-</head>
-<body style="background-color: navy; color: yellow; text-align: center; font-family: Impact, sans-serif; padding-bottom: 60px;">
-
-    <h1>SUMMIT CONSULTING GROUP</h1>
-    <h2><i>"Synergizing Your Athletic Ecosystem Through Advanced Ball Physics"</i></h2>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Consulting Group | Actionable Strategy for Young Men</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Reset & Base Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     
-    <hr style="border: 3px dashed lime;">
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1f2937;
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
 
-    <p style="font-family: 'Comic Sans MS'; font-size: 20px; color: cyan;">
-        Welcome to the leading edge of municipal kickball and corporate softball advisory. 
-        Our elite consultants have watched at least three YouTube tutorials on sports management.
-    </p>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-    <!-- 4 League Buttons -->
-    <div style="margin: 30px auto;">
-        <button style="background-color: lime; color: black; font-size: 18px; padding: 15px 25px; margin: 8px; font-weight: bold; border: 3px solid red; cursor: pointer;">NFL</button>
-        <button style="background-color: orange; color: black; font-size: 18px; padding: 15px 25px; margin: 8px; font-weight: bold; border: 3px solid blue; cursor: pointer;">NCAA Football</button>
-        <button style="background-color: cyan; color: black; font-size: 18px; padding: 15px 25px; margin: 8px; font-weight: bold; border: 3px solid yellow; cursor: pointer;">Baseball</button>
-        <button style="background-color: magenta; color: white; font-size: 18px; padding: 15px 25px; margin: 8px; font-weight: bold; border: 3px solid lime; cursor: pointer;">MLB</button>
+    .text-center {
+      text-align: center;
+    }
+
+    /* Navigation Header */
+    nav {
+      background-color: #111827;
+      padding: 20px 0;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    nav .logo {
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #111827;
+      color: #ffffff;
+      padding: 100px 0 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.25rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #9ca3af;
+      max-width: 650px;
+      margin: 0 auto 40px auto;
+    }
+
+    /* Call to Action Buttons */
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #2563eb;
+      color: #ffffff;
+      border: 2px solid #2563eb;
+    }
+
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #ffffff;
+      border: 2px solid #374151;
+    }
+
+    .btn-secondary:hover {
+      background-color: #1f2937;
+      border-color: #4b5563;
+    }
+
+    /* Features / Value Pillars */
+    .pillars {
+      padding: 80px 0;
+      background-color: #ffffff;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .pillar-card {
+      border: 1px solid #e5e7eb;
+      padding: 32px;
+      border-radius: 8px;
+      background-color: #fafafa;
+    }
+
+    .pillar-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .pillar-card p {
+      color: #4b5563;
+      font-size: 0.975rem;
+    }
+
+    /* Lead Magnet / Email Capture */
+    .lead-magnet {
+      background-color: #f3f4f6;
+      padding: 80px 0;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .lead-magnet h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .lead-magnet p {
+      color: #4b5563;
+      font-size: 1.1rem;
+    }
+
+    .email-form {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .email-form input[type="email"] {
+      flex: 1;
+      padding: 16px;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .email-form input[type="email"]:focus {
+      border-color: #2563eb;
+    }
+
+    .email-form .btn-submit {
+      background-color: #111827;
+      color: #ffffff;
+      border: none;
+      padding: 16px 28px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .email-form .btn-submit:hover {
+      background-color: #1f2937;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111827;
+      color: #6b7280;
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.875rem;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+      .cta-group {
+        flex-direction: column;
+        width: 100%;
+      }
+      .btn {
+        width: 100%;
+      }
+      .email-form {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <nav>
+    <div class="container">
+      <div class="logo">Summit Consulting</div>
     </div>
+  </nav>
 
-    <div style="background-color: white; color: black; padding: 20px; margin: 40px auto; width: 60%; border: 5px solid magenta;">
-        <h3>Book a Consultation Today!</h3>
-        <p>Rates start at $10,000 per hour or one large pepperoni pizza.</p>
-        <button style="background-color: yellow; font-size: 20px; padding: 10px 20px; font-weight: bold; cursor: pointer;">HIRE US NOW</button>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Actionable Strategy & Mentorship for Driven Young Men</h1>
+      <p>Build disciplined habits, navigate your career path, and establish a bulletproof foundation for personal success.</p>
+      
+      <div class="cta-group">
+        <!-- Replace YOUR_FREE_CALENDLY_LINK with your actual free booking URL -->
+        <a href="YOUR_FREE_CALENDLY_LINK" class="btn btn-primary">Book Free Strategy Call</a>
+        
+        <!-- Replace YOUR_PAID_CALENDLY_LINK with your actual paid booking URL -->
+        <a href="YOUR_PAID_CALENDLY_LINK" class="btn btn-secondary">Book Paid Deep-Dive</a>
+      </div>
     </div>
+  </header>
 
-    <p style="font-size: 12px; color: gray;">© 2026 Summit Consulting Group. All rights reserved. Not responsible for dropped fly balls.</p>
+  <!-- Value Pillars Section -->
+  <section class="pillars">
+    <div class="container">
+      <h2 class="text-center" style="font-size: 2rem; font-weight: 800;">How We Work Together</h2>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <h3>1-on-1 Mentorship</h3>
+          <p>Direct access, personal accountability, and weekly check-ins structured around your goals.</p>
+        </div>
+        <div class="pillar-card">
+          <h3>Career & Income Strategy</h3>
+          <p>Resume optimization, interview prep, and high-income skill development tailored to your strengths.</p>
+        </div>
+        <div class="pillar-card">
+          <h3>Habit Systems</h3>
+          <p>Eliminate daily friction. Design personal systems for productivity, fitness, and time management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Scrolling Ticker at the Bottom -->
-    <marquee scrollamount="10" style="background-color: red; color: white; font-size: 18px; position: fixed; bottom: 0; left: 0; width: 100%; padding: 8px 0;">
-        You've wasted more time in worse meetings · Your competitor already booked theirs · Overthinking is expensive · Bad decisions cost more than good advice · You already know you need this · Stop guessing · Figure it out. Fast. · Most problems aren't that complicated · The answer exists. Find it. · Every day without a plan is a choice · Confusion is optional · Mediocrity is a slow death · The cost of doing nothing adds up · We've seen this problem before. You haven't. · Not all advice is created equal · Some things you shouldn't figure out alone · Experience is transferable · Stuck is a terrible place to stay · The clock is running whether you book or not · Indecision has a price tag.
-    </marquee>
+  <!-- Email Capture Section -->
+  <section class="lead-magnet">
+    <div class="container text-center">
+      <h2>Get The Morning Execution Blueprint</h2>
+      <p>Drop your email below and receive the exact routine used to structure high-output days.</p>
+      
+      <!-- Replace YOUR_EMAIL_SERVICE_LINK with your Formspree/Mailchimp form action link -->
+      <form action="YOUR_EMAIL_SERVICE_LINK" method="POST" class="email-form">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn-submit">Get Free Access</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Summit Consulting Group. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
